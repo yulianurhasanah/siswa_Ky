@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penggunaan Variabel & Operator Javascript</title>
+    <link rel="stylesheet" href="usia.css"
+  </head>
+  <body>
+    <div class="container">
+      <h2>Data Mahasiswa & Usia</h2>
+      <input type="text" id="nama" placeholder="Masukan nama anda!" />
+      <input type="number" id="nim" placeholder="Masukan Nim anda!" />
+      <input type="number" id="tahun" placeholder="Masukan tahun kelahiran!" />
+      <button onclick="tampilkanHasil()">Tampilkan</button>
+      <div id="hasil"></div>
+    </div>
+    <script>
+      function tampilkanHasil() {
+        // Variabel Tipe Data String & Number
+        let namaMahasiswa = document.getElementById("nama").value;
+        let nimMahasiswa = Number(document.getElementById("nim").value);
+        let tahunMahasiswa = Number(document.getElementById("tahun").value);
+
+        // Operator Aritmatika
+        let usia = 2025 - tahunMahasiswa;
+
+        // Output Ke HTML
+        document.getElementById("hasil").innerHTML = `<p>
+            Nama = <strong>${namaMahasiswa}</strong> <br />
+            Nim = <strong>${nimMahasiswa}</strong> <br />
+            Usia = <strong>${usia.toLocaleString()}</strong>
+          </p>
+        `;
+      }
+    </script>
+  </body>
+</html>

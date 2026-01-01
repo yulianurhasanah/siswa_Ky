@@ -1,0 +1,62 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff9db; /* kuning lembut */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 350px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  border: 2px solid #f1d400;
+}
+
+h2 {
+  text-align: center;
+  color: #e0b800;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #b38f00;
+}
+
+input {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin: 6px 0 12px;
+  border-radius: 6px;
+  border: 2px solid #f1d400;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  background: #f1d400; /* kuning utama */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #d4b200; /* kuning lebih gelap */
+}
+
+#hasil {
+  margin-top: 15px;
+  font-size: 16px;
+  background-color: #fff3a0;
+  color: #b38f00;
+  padding: 10px;
+  text-align: center;
+  border-radius: 6px;
+}
